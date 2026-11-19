@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+     <nav>
+<h2>LEEVI'S NBA TAKES</h2>
+
+<button onclick="changetheme()">CHANGE THEME</button>
+
+<div class="nav-links">
+    <a href="start.html">HOME</a>
+    <a href="my top 5.html" >MY TOP 5</a>
+    <a href="kontakt.html" >CONTACT</a>
+
+
+
+    </div>
+    
+    </nav>
+
+    <section class="players-intro">
+
+<h1>ABOUT ME</h1>
+
+<p>
+   My name is Leevi Kohtala. I am a 20 year old student at Södertörns Högskola, studying journalism.
+   I have a background in basketball going back to my childhood. On this page you will get a rundown of
+   my passion for the sport and why I made this website.
+</p>
+</section>
+
+
+<section class="about-me-list">
+
+    <div class="about-me-card">
+ <h2>MY OWN PLAYING EXPIRIENCE</h2>
+
+ <p>
+    I started playing basketball at the age of 10 in a club called "Viby Basket" in Sollentuna, Sweden. I was a tall kid, reaching the height of 6 foot 3 at the age of 13.
+    This meant that for the majority of my playing career, I played as a wing/center. I spent most of my time playing in division 2, being the second star on a team
+    that regularly finished as the top team in our division.
+
+ </p>
+</div>
+
+<div class="about-me-card">
+
+    <h2>MY TINY COACHING EXPIRIENCE</h2>
+
+    <p>
+        At the age of 15 I decided to coach a youth team of 13 year olds for one season. During my time as a coach I got tasked with
+        developing the second string players that had less playing expirience compared to the divison 1 team. I led the second string players to
+        a 10-6 record, which in all honesty was probably more due to the fast development of the players, rather than some incredible coaching effort for me.
+
+
+    </p>
+
+
+</div>
+
+
+<div class="about-me-card">
+
+    <h2>MY NBA FANDOM</h2>
+
+    <p>
+        I started watching NBA at the bright age of 10, and have been heavily invested in the league since I turned 12. This includes me watching a lot of games
+        and analyzing the sport of basketball that gets played at the highest level. I am personally a Lakers fan, which probably shows in my clear bias in the "Top 5
+        standout players" list. In my personal opinion, I have great knowledge of the league, hence my opinions must be correct... right?... right guys??
+
+
+    </p>
+
+
+</div>
+</section>
+
+<script>
+
+    function changetheme() {
+
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "blue");
+    }
+}
+
+if (localStorage.getItem("theme") == "dark") {
+    document.body.classList.add("dark-theme");
+}
+
+</script>
+
+</body>
+</html>
