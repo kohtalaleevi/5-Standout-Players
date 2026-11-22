@@ -1,3 +1,6 @@
+
+
+/* Grundinställningar för hela hemsidan, t.ex bakgrundsfärg, textfärg och typsnitt */
 body {
 margin: 0;
 background-color: rgb(48, 55, 75);
@@ -6,6 +9,7 @@ font-family: 'Times New Roman', Times, serif;
 
 }
 
+/* Navigationsmenyns utseende och placering längst upp på hemsidan */
 nav {
 
 display: flex;
@@ -16,11 +20,13 @@ padding: 35px;
 background-color: rgb(27, 31, 51);
 }
 
+/* Hemsidans namn i navigationsmenyn */
 nav h2 {
     color: rgb(130, 196, 253);
     font-size: 30px;
 }
 
+/* Bestämmer hur länkarna i navigationsmenyn placeras och hur mycket avstånd de har mellan sig */
 .nav-links {
 display: flex;
 margin-left: 25px;
@@ -28,11 +34,13 @@ flex-direction: row;
 gap: 25px;
 }
 
+/* Bestämmer färg och utseende på länkarna i navigationsmenyn */
 .nav-links a{
     color: aliceblue;
     text-decoration: none;
 }
 
+/* Huvudsektion med bakgrundsbild och text på startsidan */
 .burgers {
 
     height: 550px;
@@ -44,6 +52,7 @@ gap: 25px;
 align-items: center;
 }
 
+/* Lägger till en bakgrundsbild bakom texten i huvudsektionen och gör den centrerad, utan att den dupliceras*/
 .burgers::before {
     content:"" ;
     position: absolute;
@@ -62,7 +71,7 @@ align-items: center;
 
 
 
-
+/* Bestämmer placering och storlek på texten i huvudsektionen */
 .burgers-text {
     position: relative;
     max-width: 380px;
@@ -70,12 +79,14 @@ align-items: center;
     padding-left: 40px;
 }
 
+/* Anpassar bakgrundsbilden genom att göra den suddigare på skärmar som är mindre än 1100 pixlar */
 @media screen and (max-width: 1100px){
     .burgers::before{
     filter: blur(4px);
     }
 }
 
+/* Bestämmer utseende, storlek och färg på huvudrubriken i startsidans huvudsektion */
 .burgers h1 {
 
     font-size: 50px;
@@ -86,13 +97,14 @@ align-items: center;
      1px  1px 0 #133172;;
 }
 
+/* Bestämmer storlek och radavstånd på texten i huvudsektionen */
 .burgers p {
     font-size: 25px;
     line-height: 1.5;
     max-width: 350px;
 }
 
-
+/* Utseende och placering för knapp */
 .button {
     display: inline-block;
 
@@ -111,10 +123,12 @@ align-items: center;
     border-radius: 5px;
 }
 
+/* Gör knappen lite genomskinlig när besökaren håller muspekaren över den */
 .button:hover {
     opacity: 0.8;
 }
 
+/* Introduktionssektionens placering och textjustering */
 .intro {
 text-align: center;
 
@@ -122,27 +136,32 @@ max-width: 600px;
 margin: auto;
 }
 
+/* Utseende på rubriken i introduktionssektionen */
 .intro h2 {
     font-size: 30px;
     color: rgb(130, 196, 253);
 }
 
+/* Bestämmer textstorleken i introduktionssektionen */
 .intro p {
 font-size: 19px;
 
 }
 
+/* Introduktionssektion som används på undersidorna */
 .players-intro {
 text-align: center;
 padding: 50px 20px;
 }
 
+/* Utseende på huvudrubriken i introduktionssektionen på undersidorna */
 .players-intro h1 {
     font-size: 38px;
     color: rgb(130, 196, 253);
     margin-bottom: 20px;
 }
 
+/* Bestämmer textstorlek, radavstånd och bredd på brödtexten */
 .players-intro p {
    font-size: 18px ;
    max-width: 650px;
@@ -150,6 +169,8 @@ padding: 50px 20px;
   margin: auto;
 }
 
+
+/* Huvudsektion som placerar spelarkorten i en lodrät lista och centrerar dem */
 .players-list {
     max-width: 1500px;
     width: 100%;
@@ -161,6 +182,7 @@ padding: 50px 20px;
     align-items: center;
 }
 
+/* Bestämmer utseende, storlek, bakgrund och skugga för varje spelarkort */
 .player-card {
     background-color:rgb(84, 95, 129) ;
     padding: 35px;
@@ -168,10 +190,10 @@ padding: 50px 20px;
     margin-bottom: 0 auto 50px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  
-
 }
 
+
+/* Bestämmer storlek, placering och anpassning av bilderna i spelarkorten */
 .player-card img {
     size: 30%;
     height: 400px;
@@ -185,7 +207,7 @@ padding: 50px 20px;
 
 }
 
-
+/* Bestämmer utseende på spelarnas namn och rubriker i spelarkorten */
 .player-card h2 {
     font-size: 30px;
     color: rgb(252, 253, 253);
@@ -193,12 +215,14 @@ padding: 50px 20px;
     letter-spacing: 1px;
 }
 
+/* Bestämmer utseende på underrubrikerna i spelarkorten, exempelvis lag och position */
 .player-card h3 {
     color: rgb(250, 228, 169);
     font-size: 20px;
     margin-bottom: 20px;
 }
 
+/* Statistiksektion som placerar spelarstatistiken bredvid varandra i en egen ruta */
 .player-stats {
     display: flex;
     justify-content: space-around;
@@ -208,6 +232,7 @@ padding: 50px 20px;
     margin: 25px 0;
 }
 
+/* Bestämmer textfärg, storlek och typsnitt för statistiken */
 .player-stats p {
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -217,6 +242,7 @@ padding: 50px 20px;
 
 }
 
+/* Bestämmer textfärg, radavstånd och textstorlek för innehållet i spelarkorten */
 .player-card {
     color: rgb(255, 255, 255);
     line-height: 1.9;
@@ -224,6 +250,7 @@ padding: 50px 20px;
 
 }
 
+/* Anpassar spelarkorten och textstorlekarna för mindre skärmar, exempelvis mobiltelefoner */
 @media (max-width: 600px) {
 
     .players-list {
@@ -248,6 +275,7 @@ padding: 50px 20px;
 
 }
 
+/* Utseende och placering för knappen som tar besökaren tillbaka till startsidan */
 .home-button {
 display: inline-block;
 background-color: #133172;
@@ -262,11 +290,12 @@ border-radius: 8px;
 box-shadow:0 4px 15px rgba(0,0,0,0.5) ;
 }
 
+/* Gör knappen lite genomskinlig när besökaren håller muspekaren över den */
 .home-button:hover{
     opacity: 0.8;
 }
 
-
+/* Huvudsektion som placerar informationskorten på ABOUT ME-sidan och väljer en del av deras propotioner */
 .about-me-list {
 max-width: 1500px;
 width: 100%;
@@ -280,6 +309,7 @@ align-items: center;
 }
 
 
+/* Bestämmer utseende, storlek, bakgrund och text för informationskorten på ABOUT ME-sidan */
 .about-me-card {
 background-color:rgb(84, 95, 129) ;
 padding: 35px;
@@ -296,6 +326,7 @@ line-height: 1.9;
 font-size: 18px;
 }
 
+/* Bestämmer utseendet på rubrikerna i informationskorten på ABOUT ME-sidan */
 .about-me-card h2 {
     font-size: 30px;
     color: #fdfdfd;
@@ -303,7 +334,7 @@ font-size: 18px;
     letter-spacing: 1px;
 }
 
-
+/* Huvudsektion som placerar kontaktkortet i mitten av CONTACT-sidan */
 .contact-list {
     max-width: 1500px;
     width: 100%;
@@ -316,6 +347,7 @@ font-size: 18px;
     box-sizing: border-box;
 }
 
+/* Bestämmer utseende, storlek och bakgrund för kontaktkortet */
 .contact-card {
     background-color:rgb(84, 95, 129) ;
     padding: 35px;
@@ -330,16 +362,21 @@ font-size: 18px;
 
 }
 
+/* Bestämmer utseende och centrering av rubriken i kontaktkortet */
 .contact-card h2{
     text-align: center;
     font-size: 30px;
     margin-bottom: 25px;
 }
 
+
+/* Bestämmer avståndet mellan styckena med kontaktinformation */
 .contact-card p {
 margin-bottom: 10px;
 }
 
+
+/* Bestämmer det grundläggande utseendet och placeringen för hemsidans knappar */
 button {
     background-color: #133172;
     color: white;
@@ -348,17 +385,17 @@ button {
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-    margin-bottom: 15px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 0;
+    position: static;
+    transform: none;
 }
 
+/* Gör knapparna lite genomskinliga när besökaren håller muspekaren över dem */
 button:hover {
     opacity: 0.8;
 }
 
-
+/* Delen som fixar mörkt tema på olika delar av hemsidan, för att skapa lite kontrast */
 .dark-theme {
     background-color: #272727;
 }
@@ -375,4 +412,34 @@ button:hover {
 
 .dark-theme .player-stats {
     background-color: #1f1f1f;
+}
+
+
+
+
+/* Anpassar navigationsmenyn och knappen för mobiltelefoner */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav h2 {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        margin-left: 0;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
 }
